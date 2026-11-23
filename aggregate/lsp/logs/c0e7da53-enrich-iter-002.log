@@ -1,0 +1,21 @@
+[2026-11-23T10:32:49Z] === ENRICH ITERATION 2 START | repo=Azure/azure-sdk-for-python sha=c0e7da53 ===
+[2026-11-23T10:32:49Z] [iter=2] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=c0e7da53 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c0e7da53-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c0e7da5389a96b2ce17ea7813b8504381c377c80.nq.gz
+[2026-11-23T10:32:57Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-23T10:34:02Z] [iter=2] AST store loaded triples=6502295 load_secs=63 mem_mb=1048 MB
+[2026-11-23T10:34:02Z] [iter=2] Step 2: Finding LSP targets mem_mb=1048 MB
+[2026-11-23T10:34:24Z] [iter=2] LSP targets found call_sites=28748 imports=1927 extends=1788 implements=0 secs=22
+[2026-11-23T10:34:26Z] [iter=2] Loaded checkpoint partial graph triples=29169
+[2026-11-23T10:34:26Z] [iter=2] Primed enclosing-def cache from persisted triples entries=243
+[2026-11-23T10:34:45Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1048 MB
+[2026-11-23T10:35:34Z] [iter=2] Position index built positions=466435 nodes_with_types=602313 secs=49 mem_mb=1415 MB
+[2026-11-23T10:35:34Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1415 MB already_completed_types=[] already_completed_files=6
+[2026-11-23T10:35:34Z] [iter=2] Resolving target type target_type=call_site count=28748
+[2026-11-23T10:35:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=0 resolved=0 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate-vsdoc.js
+[2026-11-23T10:36:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=1 resolved=46 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery-1.10.2.intellisense.js
+[2026-11-23T10:46:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=3 resolved=468 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/express_route_circuits_operations.py
+[2026-11-23T10:47:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=4 resolved=525 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/sites_operations.py
+[2026-11-23T10:59:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=5 resolved=1230 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/hosting_environments_operations.py
+[2026-11-23T11:02:49Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=11 new_files_this_iter=5 mem_mb=1429 MB
+[2026-11-23T11:02:49Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/c0e7da5389a96b2ce17ea7813b8504381c377c80.nq.gz triples=43505
+[2026-11-23T11:02:50Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-11-23T11:02:50Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=11

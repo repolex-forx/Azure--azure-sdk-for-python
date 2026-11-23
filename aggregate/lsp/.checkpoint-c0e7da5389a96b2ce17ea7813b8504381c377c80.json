@@ -1,8 +1,13 @@
 {
   "commit_sha": "c0e7da5389a96b2ce17ea7813b8504381c377c80",
   "completed_files": [
+    "azure-mgmt-network/azure/mgmt/network/operations/express_route_circuits_operations.py",
+    "azure-mgmt-web/azure/mgmt/web/operations/sites_operations.py",
+    "azure-mgmt/tests/test_batch.py",
     "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/bootstrap.js",
+    "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery-1.10.2.intellisense.js",
     "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery-1.10.2.js",
+    "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate-vsdoc.js",
     "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate.js",
     "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate.unobtrusive.js",
     "examples/AzureResourceViewer/AzureResourceViewer/static/scripts/modernizr-2.6.2.js",
@@ -14,7 +19,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/c0e7da5389a96b2ce17ea7813b8504381c377c80.nq.gz",
     "call_sites": 28748,
     "import_statements": 1927,
-    "call_targets_resolved": 1196,
+    "call_targets_resolved": 2604,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -28,5 +33,5 @@
     "extends_class_denormalized": 1788,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1802
+  "elapsed_seconds": 1800
 }

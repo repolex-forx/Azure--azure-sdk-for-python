@@ -1987,6 +1987,10 @@
         "blob/0346b3c4df4a68c600c1a147b410713a8901b36f.nq.gz",
         "blob/6fb725396edebd12612a931e8d1eb36752759492.nq.gz",
         "blob/c98380a4591bd8b92aa34bffe5538db7bd47548f.nq.gz"
+      ],
+      "ast": [
+        "aggregate/ast/c0e7da5389a96b2ce17ea7813b8504381c377c80/chunk-001.nq.gz",
+        "aggregate/ast/c0e7da5389a96b2ce17ea7813b8504381c377c80/chunk-002.nq.gz"
       ]
     }
   ],

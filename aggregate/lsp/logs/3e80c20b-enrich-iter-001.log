@@ -1,0 +1,17 @@
+[2026-11-23T17:23:46Z] === ENRICH ITERATION 1 START | repo=Azure/azure-sdk-for-python sha=3e80c20b ===
+[2026-11-23T17:23:46Z] [iter=1] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3e80c20b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3e80c20b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3e80c20b0008ba6004753004be1462f0295c4b1b.nq.gz
+[2026-11-23T17:23:55Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-23T17:24:58Z] [iter=1] AST store loaded triples=6016314 load_secs=61 mem_mb=1040 MB
+[2026-11-23T17:24:58Z] [iter=1] Step 2: Finding LSP targets mem_mb=1040 MB
+[2026-11-23T17:25:18Z] [iter=1] LSP targets found call_sites=26364 imports=1632 extends=1537 implements=0 secs=20
+[2026-11-23T17:25:36Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1040 MB
+[2026-11-23T17:26:19Z] [iter=1] Position index built positions=430204 nodes_with_types=551230 secs=44 mem_mb=1359 MB
+[2026-11-23T17:26:19Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1359 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T17:26:19Z] [iter=1] Resolving target type target_type=call_site count=26364
+[2026-11-23T17:26:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=0 resolved=0 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/express_route_circuits_operations.py
+[2026-11-23T17:27:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=1 resolved=57 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/routes_operations.py
+[2026-11-23T17:44:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.8 files_done=3 resolved=624 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/sites_operations.py
+[2026-11-23T17:53:46Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=3 new_files_this_iter=3 mem_mb=1373 MB
+[2026-11-23T17:53:46Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/3e80c20b0008ba6004753004be1462f0295c4b1b.nq.gz triples=25999
+[2026-11-23T17:53:47Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-23T17:53:47Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=3

@@ -1,0 +1,7 @@
+[2026-11-23T23:07:04Z] === AST ITERATION 1 START | repo=Azure/azure-sdk-for-python sha=5cbe34e9 ===
+[2026-11-23T23:07:04Z] [iter=1] PHASE START: ast repo=Azure/azure-sdk-for-python sha=5cbe34e9
+[2026-11-23T23:07:04Z] [iter=1] Building AST aggregate chunks
+[2026-11-23T23:13:50Z] [iter=1] AST chunks built count=2 triples=5836344
+[2026-11-23T23:13:50Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3/.complete
+[2026-11-23T23:13:50Z] [iter=1] PHASE END: ast elapsed_s=406 elapsed_min=6.8
+[2026-11-23T23:13:51Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json

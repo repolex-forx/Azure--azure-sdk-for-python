@@ -1,0 +1,22 @@
+[2026-11-24T02:04:58Z] === ENRICH ITERATION 6 START | repo=Azure/azure-sdk-for-python sha=5cbe34e9 ===
+[2026-11-24T02:04:58Z] [iter=6] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=5cbe34e9 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5cbe34e9-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3.nq.gz
+[2026-11-24T02:05:05Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T02:06:06Z] [iter=6] AST store loaded triples=5836270 load_secs=59 mem_mb=1041 MB
+[2026-11-24T02:06:06Z] [iter=6] Step 2: Finding LSP targets mem_mb=1041 MB
+[2026-11-24T02:06:27Z] [iter=6] LSP targets found call_sites=25789 imports=1550 extends=1472 implements=0 secs=21
+[2026-11-24T02:06:34Z] [iter=6] Loaded checkpoint partial graph triples=119433
+[2026-11-24T02:06:34Z] [iter=6] Primed enclosing-def cache from persisted triples entries=1667
+[2026-11-24T02:06:52Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1041 MB
+[2026-11-24T02:07:35Z] [iter=6] Position index built positions=417819 nodes_with_types=535098 secs=44 mem_mb=1444 MB
+[2026-11-24T02:07:35Z] [iter=6] Step 3: Starting LSP resolution mem_mb=1444 MB already_completed_types=[] already_completed_files=537
+[2026-11-24T02:07:35Z] [iter=6] Resolving target type target_type=call_site count=25789
+[2026-11-24T02:07:41Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=0 resolved=0 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/modernizr-2.6.2.js
+[2026-11-24T02:08:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=1 resolved=56 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate.unobtrusive.js
+[2026-11-24T02:09:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=4.6 files_done=2 resolved=92 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/respond.js
+[2026-11-24T02:10:07Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=3 resolved=145 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery-1.10.2.intellisense.js
+[2026-11-24T02:10:17Z] [iter=6] Target type resolved target_type=call_site resolved=147 errors=0 secs=162 mem_mb=1445 MB
+[2026-11-24T02:10:17Z] [iter=6] Resolving target type target_type=import_statement count=1550
+[2026-11-24T02:10:21Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=5.4 files_completed=1037 new_files_this_iter=500 mem_mb=1445 MB
+[2026-11-24T02:10:21Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3.nq.gz triples=121511
+[2026-11-24T02:10:23Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-11-24T02:10:23Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=324 elapsed_min=5.4 files_completed=1037

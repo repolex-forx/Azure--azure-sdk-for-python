@@ -1,0 +1,41 @@
+{
+  "org": "Azure",
+  "repo": "azure-sdk-for-python",
+  "versions": [
+    {
+      "commit": "3dc2b386293e2fea95abd206f57b52cbf9e8be5c",
+      "tag": "v2.0.0a1",
+      "parsed_at": "2026-11-24T17:13:58.072016+00:00"
+    },
+    {
+      "commit": "53fb0fcbbb894ad6129b388c5bea23f54e8b97b5",
+      "tag": "v2.0.0rc1",
+      "parsed_at": "2026-11-24T12:47:51.564864+00:00"
+    },
+    {
+      "commit": "4f0c4fd6f2385c0bc9a1082503a9d94ede08cfa8",
+      "tag": "v2.0.0rc2",
+      "parsed_at": "2026-11-24T09:12:54.258028+00:00"
+    },
+    {
+      "commit": "d5c477477dcdf0e85ddb62d2867385b1055c1cbd",
+      "tag": "v2.0.0rc3",
+      "parsed_at": "2026-11-24T04:29:39.799524+00:00"
+    },
+    {
+      "commit": "5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3",
+      "tag": "v2.0.0rc4",
+      "parsed_at": "2026-11-23T23:03:46.192453+00:00"
+    },
+    {
+      "commit": "3e80c20b0008ba6004753004be1462f0295c4b1b",
+      "tag": "v2.0.0rc5",
+      "parsed_at": "2026-11-23T17:03:23.102914+00:00"
+    },
+    {
+      "commit": "c0e7da5389a96b2ce17ea7813b8504381c377c80",
+      "tag": "v2.0.0rc6",
+      "parsed_at": "2026-11-23T09:42:16.085574+00:00"
+    }
+  ]
+}

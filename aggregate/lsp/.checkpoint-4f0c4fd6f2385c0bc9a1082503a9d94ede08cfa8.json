@@ -1,0 +1,38 @@
+{
+  "commit_sha": "4f0c4fd6f2385c0bc9a1082503a9d94ede08cfa8",
+  "completed_files": [
+    "azure-graphrbac/azure/graphrbac/operations/user_operations.py",
+    "azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_extension_images_operations.py",
+    "azure-mgmt-network/azure/mgmt/network/operations/public_ip_addresses_operations.py",
+    "azure-mgmt-network/azure/mgmt/network/operations/route_tables_operations.py",
+    "azure-mgmt-network/azure/mgmt/network/operations/subnets_operations.py",
+    "azure-mgmt-resource/azure/mgmt/resource/locks/operations/management_locks_operations.py",
+    "azure-mgmt-resource/azure/mgmt/resource/resources/operations/policy_assignments_operations.py",
+    "azure-mgmt-web/azure/mgmt/web/operations/hosting_environments_operations.py",
+    "azure-mgmt-web/azure/mgmt/web/operations/sites_operations.py",
+    "azure-servicebus/azure/servicebus/_common_conversion.py",
+    "azure-servicebus/azure/servicebus/_common_serialization.py",
+    "azure-servicebus/azure/servicebus/servicebusservice.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/Azure/azure-sdk-for-python/lsp/4f0c4fd6f2385c0bc9a1082503a9d94ede08cfa8",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/4f0c4fd6f2385c0bc9a1082503a9d94ede08cfa8.nq.gz",
+    "call_sites": 21166,
+    "import_statements": 1112,
+    "call_targets_resolved": 2133,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 1047,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 1948,
+    "import_symbols_denormalized": 2627,
+    "extends_class_denormalized": 1047,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 1802
+}

@@ -25222,6 +25222,82 @@
       ],
       "ast": [
         "aggregate/ast/3dc2b386293e2fea95abd206f57b52cbf9e8be5c/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "futures",
+          "ecosystem": "PYPI",
+          "version": "3.4.0",
+          "githubOrg": "agronholm",
+          "githubRepo": "pythonfutures",
+          "githubCommit": "738e37148b2f7ecd86cbb8c271f9e033ae66eff8",
+          "githubTag": "3.4.0",
+          "githubUrl": "https://github.com/agronholm/pythonfutures",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "python-dateutil",
+          "ecosystem": "PYPI",
+          "version": "4.0.0",
+          "githubOrg": "dateutil",
+          "githubRepo": "dateutil",
+          "githubCommit": "a78cbd81d5d03b5f126eb36edb92bca78972c804",
+          "githubTag": "4.0.0",
+          "githubUrl": "https://github.com/dateutil/dateutil",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "requests",
+          "ecosystem": "PYPI",
+          "version": "2.34.2",
+          "githubOrg": "psf",
+          "githubRepo": "requests",
+          "githubCommit": "6e83187b8feb273ed4c6cdab5efd8d54901dfab3",
+          "githubTag": "v2.34.2",
+          "githubUrl": "https://github.com/psf/requests",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "vcrpy",
+          "ecosystem": "PYPI",
+          "version": "9.4.2",
+          "githubOrg": "kevin1024",
+          "githubRepo": "vcrpy",
+          "githubCommit": "86e22b454bf94d3ec5174f909f8676a7efbd86ef",
+          "githubTag": "v9.4.2",
+          "githubUrl": "https://github.com/kevin1024/vcrpy",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "pyopenssl",
+          "ecosystem": "PYPI",
+          "version": "26.4.0",
+          "githubOrg": "pyca",
+          "githubRepo": "pyopenssl",
+          "githubCommit": "07b1ef7cc2ed71c77ebc113d0c10fc045e40861a",
+          "githubTag": "26.4.0",
+          "githubUrl": "https://github.com/pyca/pyopenssl",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "msrest",
+          "ecosystem": "PYPI",
+          "version": "0.7.1",
+          "githubOrg": "Azure",
+          "githubRepo": "msrest-for-python",
+          "githubUrl": "https://github.com/Azure/msrest-for-python",
+          "source": "build_file:requirements.txt"
+        },
+        {
+          "packageName": "msrestazure",
+          "ecosystem": "PYPI",
+          "version": "0.6.4.post1",
+          "githubOrg": "Azure",
+          "githubRepo": "msrestazure-for-python",
+          "githubUrl": "https://github.com/Azure/msrestazure-for-python",
+          "source": "build_file:requirements.txt"
+        }
       ]
     }
   ],

@@ -1,0 +1,20 @@
+[2026-11-24T16:18:27Z] === ENRICH ITERATION 5 START | repo=Azure/azure-sdk-for-python sha=3dc2b386 ===
+[2026-11-24T16:18:27Z] [iter=5] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3dc2b386 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3dc2b386-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz
+[2026-11-24T16:18:37Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T16:19:17Z] [iter=5] AST store loaded triples=4211564 load_secs=39 mem_mb=966 MB
+[2026-11-24T16:19:17Z] [iter=5] Step 2: Finding LSP targets mem_mb=966 MB
+[2026-11-24T16:19:30Z] [iter=5] LSP targets found call_sites=20850 imports=1096 extends=1039 implements=0 secs=13
+[2026-11-24T16:19:36Z] [iter=5] Loaded checkpoint partial graph triples=103233
+[2026-11-24T16:19:36Z] [iter=5] Primed enclosing-def cache from persisted triples entries=1316
+[2026-11-24T16:19:47Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=966 MB
+[2026-11-24T16:20:15Z] [iter=5] Position index built positions=303336 nodes_with_types=386372 secs=28 mem_mb=1220 MB
+[2026-11-24T16:20:15Z] [iter=5] Step 3: Starting LSP resolution mem_mb=1220 MB already_completed_types=['call_site', 'import_statement'] already_completed_files=726
+[2026-11-24T16:20:15Z] [iter=5] Skipping target type (completed in previous iteration) target_type=call_site
+[2026-11-24T16:20:15Z] [iter=5] Skipping target type (completed in previous iteration) target_type=import_statement
+[2026-11-24T16:20:15Z] [iter=5] Resolving target type target_type=extends_clause count=1039
+[2026-11-24T16:20:16Z] [iter=5] HEARTBEAT target_type=extends_clause elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/models/deployment_extended_paged.py
+[2026-11-24T16:20:17Z] [iter=5] Target type resolved target_type=extends_clause resolved=4 errors=0 secs=2 mem_mb=1221 MB
+[2026-11-24T17:08:26Z] [iter=5] Step 5: Writing final enrichment file triples=203041
+[2026-11-24T17:08:29Z] [iter=5] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz size_kb=5543
+[2026-11-24T17:08:29Z] [iter=5] Checkpoint cleared (enrichment complete)
+[2026-11-24T17:08:29Z] [iter=5] PHASE END: enrich elapsed_s=3001 elapsed_min=50.0 total_triples=203041

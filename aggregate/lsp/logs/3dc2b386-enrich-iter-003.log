@@ -1,46 +1,47 @@
-[2026-11-24T14:50:46Z] === ENRICH ITERATION 3 START | repo=Azure/azure-sdk-for-python sha=3dc2b386 ===
-[2026-11-24T14:50:46Z] [iter=3] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3dc2b386 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3dc2b386-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz
-[2026-11-24T14:50:58Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
-[2026-11-24T14:51:33Z] [iter=3] AST store loaded triples=4211564 load_secs=34 mem_mb=1093 MB
-[2026-11-24T14:51:33Z] [iter=3] Step 2: Finding LSP targets mem_mb=1093 MB
-[2026-11-24T14:51:42Z] [iter=3] LSP targets found call_sites=20850 imports=1096 extends=1039 implements=0 secs=9
-[2026-11-24T14:51:44Z] [iter=3] Loaded checkpoint partial graph triples=48716
-[2026-11-24T14:51:44Z] [iter=3] Primed enclosing-def cache from persisted triples entries=520
-[2026-11-24T14:51:52Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1093 MB
-[2026-11-24T14:52:10Z] [iter=3] Position index built positions=303336 nodes_with_types=386372 secs=18 mem_mb=1107 MB
-[2026-11-24T14:52:10Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1107 MB already_completed_types=[] already_completed_files=36
-[2026-11-24T14:52:10Z] [iter=3] Resolving target type target_type=call_site count=20850
-[2026-11-24T14:52:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.4 files_done=0 resolved=0 errors=0 current=azure-mgmt-redis/azure/mgmt/redis/operations/redis_operations.py
-[2026-11-24T14:52:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=3 resolved=131 errors=0 current=azure-graphrbac/azure/graphrbac/operations/group_operations.py
-[2026-11-24T14:56:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=5 resolved=461 errors=0 current=azure-servicemanagement-legacy/tests/test_legacy_mgmt_affinitygroup.py
-[2026-11-24T14:57:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=7 resolved=544 errors=0 current=azure-mgmt-logic/azure/mgmt/logic/operations/workflow_triggers_operations.py
-[2026-11-24T14:57:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=9 resolved=636 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/provider_operations.py
-[2026-11-24T14:58:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=14 resolved=739 errors=0 current=azure-mgmt/tests/mgmt_settings_fake.py
-[2026-11-24T15:04:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=20 resolved=1167 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/global_model_operations.py
-[2026-11-24T15:04:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=24 resolved=1281 errors=0 current=azure-mgmt-scheduler/azure/mgmt/scheduler/operations/jobs_operations.py
-[2026-11-24T15:06:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=27 resolved=1484 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/virtual_network_gateway_connections_operations.py
-[2026-11-24T15:06:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=30 resolved=1594 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/_common_serialization.py
-[2026-11-24T15:07:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=16.8 files_done=33 resolved=1684 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_scale_set_vms_operations.py
-[2026-11-24T15:09:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=40 resolved=1867 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/load_balancers_operations.py
-[2026-11-24T15:09:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.1 files_done=43 resolved=1973 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_extensions_operations.py
-[2026-11-24T15:10:28Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=49 resolved=2105 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/operations/resources_operations.py
-[2026-11-24T15:11:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=51 resolved=2184 errors=0 current=azure-mgmt-scheduler/azure/mgmt/scheduler/operations/job_collections_operations.py
-[2026-11-24T15:12:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=55 resolved=2300 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/models/availability_set.py
-[2026-11-24T15:12:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=59 resolved=2361 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_images_operations.py
-[2026-11-24T15:13:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=65 resolved=2464 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/operations/resource_groups_operations.py
-[2026-11-24T15:13:55Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=71 resolved=2598 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/servicemanagementclient.py
-[2026-11-24T15:14:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.8 files_done=72 resolved=2666 errors=0 current=azure-mgmt/tests/test_mgmt_compute.py
-[2026-11-24T15:15:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=24.4 files_done=74 resolved=2719 errors=0 current=azure-mgmt-network/azure/mgmt/network/models/frontend_ip_configuration.py
-[2026-11-24T15:16:04Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=76 resolved=2779 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/features/feature_client.py
-[2026-11-24T15:16:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=78 resolved=2825 errors=0 current=azure-mgmt-network/azure/mgmt/network/network_management_client.py
-[2026-11-24T15:17:12Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.4 files_done=80 resolved=2887 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/usage_operations.py
-[2026-11-24T15:17:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.0 files_done=88 resolved=2975 errors=0 current=azure-mgmt-cdn/azure/mgmt/cdn/models/tracked_resource.py
-[2026-11-24T15:18:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=100 resolved=3087 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/operations/resource_provider_operation_details_operations.py
-[2026-11-24T15:18:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.2 files_done=107 resolved=3203 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/network_security_groups_operations.py
-[2026-11-24T15:19:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.7 files_done=120 resolved=3299 errors=0 current=azure-mgmt-scheduler/azure/mgmt/scheduler/models/basic_authentication.py
-[2026-11-24T15:20:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=29.3 files_done=137 resolved=3396 errors=0 current=azure-mgmt-authorization/azure/mgmt/authorization/operations/provider_operations_metadata_operations.py
-[2026-11-24T15:20:34Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=29.8 files_done=161 resolved=3491 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/_common_models.py
-[2026-11-24T15:20:47Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=213 new_files_this_iter=177 mem_mb=1142 MB
-[2026-11-24T15:20:47Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz triples=83441
-[2026-11-24T15:20:48Z] [iter=3] Checkpoint written, exiting with code 7
-[2026-11-24T15:20:48Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=213
+[2026-11-24T15:22:43Z] === ENRICH ITERATION 3 START | repo=Azure/azure-sdk-for-python sha=3dc2b386 ===
+[2026-11-24T15:22:43Z] [iter=3] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3dc2b386 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3dc2b386-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz
+[2026-11-24T15:22:53Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T15:23:42Z] [iter=3] AST store loaded triples=4211564 load_secs=48 mem_mb=1046 MB
+[2026-11-24T15:23:42Z] [iter=3] Step 2: Finding LSP targets mem_mb=1046 MB
+[2026-11-24T15:23:50Z] [iter=3] LSP targets found call_sites=20850 imports=1096 extends=1039 implements=0 secs=8
+[2026-11-24T15:23:51Z] [iter=3] Loaded checkpoint partial graph triples=48716
+[2026-11-24T15:23:51Z] [iter=3] Primed enclosing-def cache from persisted triples entries=520
+[2026-11-24T15:23:59Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1046 MB
+[2026-11-24T15:24:15Z] [iter=3] Position index built positions=303336 nodes_with_types=386372 secs=17 mem_mb=1172 MB
+[2026-11-24T15:24:15Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1172 MB already_completed_types=[] already_completed_files=36
+[2026-11-24T15:24:15Z] [iter=3] Resolving target type target_type=call_site count=20850
+[2026-11-24T15:24:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=0 resolved=0 errors=0 current=azure-mgmt-redis/azure/mgmt/redis/operations/redis_operations.py
+[2026-11-24T15:24:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=3 resolved=131 errors=0 current=azure-graphrbac/azure/graphrbac/operations/group_operations.py
+[2026-11-24T15:28:34Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=5 resolved=461 errors=0 current=azure-servicemanagement-legacy/tests/test_legacy_mgmt_affinitygroup.py
+[2026-11-24T15:29:10Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=7 resolved=544 errors=0 current=azure-mgmt-logic/azure/mgmt/logic/operations/workflow_triggers_operations.py
+[2026-11-24T15:29:58Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=9 resolved=636 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/provider_operations.py
+[2026-11-24T15:30:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=14 resolved=739 errors=0 current=azure-mgmt/tests/mgmt_settings_fake.py
+[2026-11-24T15:36:11Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=20 resolved=1167 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/global_model_operations.py
+[2026-11-24T15:36:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=24 resolved=1281 errors=0 current=azure-mgmt-scheduler/azure/mgmt/scheduler/operations/jobs_operations.py
+[2026-11-24T15:38:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=27 resolved=1484 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/virtual_network_gateway_connections_operations.py
+[2026-11-24T15:38:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=30 resolved=1594 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/_common_serialization.py
+[2026-11-24T15:39:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=16.8 files_done=33 resolved=1684 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_scale_set_vms_operations.py
+[2026-11-24T15:40:00Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=38 resolved=1793 errors=0 current=azure-mgmt-web/azure/mgmt/web/models/backup_item.py
+[2026-11-24T15:41:09Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.4 files_done=40 resolved=1867 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/load_balancers_operations.py
+[2026-11-24T15:41:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.0 files_done=43 resolved=1973 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_extensions_operations.py
+[2026-11-24T15:42:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=49 resolved=2105 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/operations/resources_operations.py
+[2026-11-24T15:43:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=51 resolved=2184 errors=0 current=azure-mgmt-scheduler/azure/mgmt/scheduler/operations/job_collections_operations.py
+[2026-11-24T15:43:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.2 files_done=55 resolved=2300 errors=0 current=azure-mgmt-compute/azure/mgmt/compute/models/availability_set.py
+[2026-11-24T15:44:35Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.9 files_done=60 resolved=2386 errors=0 current=azure-mgmt-logic/azure/mgmt/logic/models/workflow_access_key.py
+[2026-11-24T15:45:13Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=66 resolved=2501 errors=0 current=azure-mgmt/tests/test_mgmt_apps.py
+[2026-11-24T15:45:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.1 files_done=71 resolved=2598 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/servicemanagementclient.py
+[2026-11-24T15:46:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.7 files_done=72 resolved=2666 errors=0 current=azure-mgmt/tests/test_mgmt_compute.py
+[2026-11-24T15:47:01Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=24.3 files_done=74 resolved=2719 errors=0 current=azure-mgmt-network/azure/mgmt/network/models/frontend_ip_configuration.py
+[2026-11-24T15:47:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.1 files_done=76 resolved=2779 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/features/feature_client.py
+[2026-11-24T15:48:27Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=78 resolved=2825 errors=0 current=azure-mgmt-network/azure/mgmt/network/network_management_client.py
+[2026-11-24T15:49:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.3 files_done=80 resolved=2887 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/usage_operations.py
+[2026-11-24T15:49:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.8 files_done=90 resolved=2983 errors=0 current=azure-mgmt/tests/test_mgmt_storage.py
+[2026-11-24T15:50:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=102 resolved=3121 errors=0 current=azure-mgmt-storage/azure/mgmt/storage/operations/usage_operations.py
+[2026-11-24T15:50:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.0 files_done=107 resolved=3203 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/network_security_groups_operations.py
+[2026-11-24T15:51:13Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=121 resolved=3301 errors=0 current=azure-mgmt-logic/azure/mgmt/logic/logic_management_client.py
+[2026-11-24T15:51:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=137 resolved=3396 errors=0 current=azure-mgmt-authorization/azure/mgmt/authorization/operations/provider_operations_metadata_operations.py
+[2026-11-24T15:52:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=163 resolved=3501 errors=0 current=azure-mgmt-network/azure/mgmt/network/models/public_ip_address_paged.py
+[2026-11-24T15:52:44Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=226 new_files_this_iter=190 mem_mb=1208 MB
+[2026-11-24T15:52:44Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz triples=83874
+[2026-11-24T15:52:44Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-24T15:52:44Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=226

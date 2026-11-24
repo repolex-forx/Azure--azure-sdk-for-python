@@ -1,0 +1,39 @@
+{
+  "@context": "https://repolex.ai/ontology/jsonld-context/repolex-context.jsonld",
+  "@id": "https://repolex.ai/r/Azure/azure-sdk-for-python/commit/53fb0fcbbb894ad6129b388c5bea23f54e8b97b5",
+  "@type": "git:Commit",
+  "git:hexsha": "53fb0fcbbb894ad6129b388c5bea23f54e8b97b5",
+  "repolex:repository": {
+    "@id": "https://repolex.ai/r/Azure/azure-sdk-for-python"
+  },
+  "repolex:graphFile": [
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "filetree",
+      "repolex:graphFilePath": "filetree/53fb0fcbbb894ad6129b388c5bea23f54e8b97b5.nq.gz",
+      "repolex:graphFileSize": 361429
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "commit",
+      "repolex:graphFilePath": "commit/commit.nq.gz",
+      "repolex:graphFileSize": 32651966
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "branch",
+      "repolex:graphFilePath": "branch/branch.nq.gz",
+      "repolex:graphFileSize": 299356
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "tag",
+      "repolex:graphFilePath": "tag/tag.nq.gz",
+      "repolex:graphFileSize": 357458
+    }
+  ],
+  "repolex:parseStatus": "metadata_complete",
+  "repolex:parsedAt": "2026-11-24T12:47:51.564864+00:00",
+  "repolex:parserVersion": "0.1.10",
+  "git:tagName": "v2.0.0rc1"
+}

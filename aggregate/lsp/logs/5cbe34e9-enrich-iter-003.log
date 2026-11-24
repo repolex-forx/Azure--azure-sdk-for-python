@@ -1,0 +1,39 @@
+[2026-11-24T00:25:13Z] === ENRICH ITERATION 3 START | repo=Azure/azure-sdk-for-python sha=5cbe34e9 ===
+[2026-11-24T00:25:13Z] [iter=3] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=5cbe34e9 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5cbe34e9-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3.nq.gz
+[2026-11-24T00:25:23Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T00:26:25Z] [iter=3] AST store loaded triples=5836270 load_secs=60 mem_mb=1037 MB
+[2026-11-24T00:26:25Z] [iter=3] Step 2: Finding LSP targets mem_mb=1037 MB
+[2026-11-24T00:26:45Z] [iter=3] LSP targets found call_sites=25789 imports=1550 extends=1472 implements=0 secs=20
+[2026-11-24T00:26:48Z] [iter=3] Loaded checkpoint partial graph triples=51069
+[2026-11-24T00:26:48Z] [iter=3] Primed enclosing-def cache from persisted triples entries=500
+[2026-11-24T00:27:05Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1037 MB
+[2026-11-24T00:27:48Z] [iter=3] Position index built positions=417819 nodes_with_types=535098 secs=42 mem_mb=1323 MB
+[2026-11-24T00:27:48Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1323 MB already_completed_types=[] already_completed_files=40
+[2026-11-24T00:27:48Z] [iter=3] Resolving target type target_type=call_site count=25789
+[2026-11-24T00:27:49Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=0 resolved=0 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/servicemanagementservice.py
+[2026-11-24T00:29:59Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=1 resolved=59 errors=0 current=azure-mgmt-cdn/azure/mgmt/cdn/operations/endpoints_operations.py
+[2026-11-24T00:31:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=2 resolved=134 errors=0 current=azure-common/azure/__init__.py
+[2026-11-24T00:32:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=6 resolved=193 errors=0 current=azure-mgmt-cdn/azure/mgmt/cdn/operations/origins_operations.py
+[2026-11-24T00:33:30Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.3 files_done=7 resolved=231 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/virtual_network_gateways_operations.py
+[2026-11-24T00:34:05Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=8 resolved=266 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/server_farms_operations.py
+[2026-11-24T00:35:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=9 resolved=347 errors=0 current=azure-common/testutils/common_extendedtestcase.py
+[2026-11-24T00:36:33Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=12 resolved=444 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/_http/httpclient.py
+[2026-11-24T00:37:54Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=13 resolved=485 errors=0 current=azure-mgmt-logic/azure/mgmt/logic/operations/workflow_access_keys_operations.py
+[2026-11-24T00:39:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=15 resolved=558 errors=0 current=azure-mgmt/tests/test_mgmt_resource.py
+[2026-11-24T00:42:37Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.4 files_done=17 resolved=732 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/features/operations/features_operations.py
+[2026-11-24T00:43:17Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.1 files_done=19 resolved=773 errors=0 current=azure-mgmt-authorization/azure/mgmt/authorization/operations/role_assignments_operations.py
+[2026-11-24T00:44:02Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=20 resolved=819 errors=0 current=azure-mgmt-network/azure/mgmt/network/models/load_balancing_rule.py
+[2026-11-24T00:45:00Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=22 resolved=873 errors=0 current=azure-mgmt-authorization/azure/mgmt/authorization/operations/role_definitions_operations.py
+[2026-11-24T00:45:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.5 files_done=24 resolved=921 errors=0 current=azure-mgmt-resource/setup.py
+[2026-11-24T00:46:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.0 files_done=27 resolved=965 errors=0 current=azure-servicemanagement-legacy/tests/test_legacy_mgmt_servicebus.py
+[2026-11-24T00:47:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.0 files_done=28 resolved=1002 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/locks/operations/management_locks_operations.py
+[2026-11-24T00:48:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.8 files_done=29 resolved=1051 errors=0 current=azure-mgmt-batch/azure/mgmt/batch/operations/account_operations.py
+[2026-11-24T00:48:46Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.6 files_done=30 resolved=1095 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/views.py
+[2026-11-24T00:50:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.0 files_done=31 resolved=1140 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/network_interfaces_operations.py
+[2026-11-24T00:50:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=32 resolved=1182 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/virtual_networks_operations.py
+[2026-11-24T00:51:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=34 resolved=1232 errors=0 current=azure-mgmt-storage/azure/mgmt/storage/storage_management_client.py
+[2026-11-24T00:52:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.7 files_done=38 resolved=1311 errors=0 current=azure-batch/azure/batch/operations/certificate_operations.py
+[2026-11-24T00:55:14Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.0 files_completed=79 new_files_this_iter=39 mem_mb=1339 MB
+[2026-11-24T00:55:14Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/5cbe34e9e0b8ea1faacc9f205633ccc0b885c0f3.nq.gz triples=66194
+[2026-11-24T00:55:15Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-24T00:55:15Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1801 elapsed_min=30.0 files_completed=79

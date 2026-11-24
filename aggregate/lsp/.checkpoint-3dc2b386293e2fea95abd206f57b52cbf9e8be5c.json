@@ -1,0 +1,37 @@
+{
+  "commit_sha": "3dc2b386293e2fea95abd206f57b52cbf9e8be5c",
+  "completed_files": [
+    "azure-common/testutils/common_extendedtestcase.py",
+    "azure-mgmt-cdn/azure/mgmt/cdn/operations/endpoints_operations.py",
+    "azure-mgmt-cdn/azure/mgmt/cdn/operations/profiles_operations.py",
+    "azure-mgmt-compute/azure/mgmt/compute/operations/virtual_machine_scale_sets_operations.py",
+    "azure-mgmt-network/azure/mgmt/network/operations/network_interfaces_operations.py",
+    "azure-servicebus/tests/test_servicebus_eventhub.py",
+    "azure-servicemanagement-legacy/azure/servicemanagement/_http/winhttp.py",
+    "azure-servicemanagement-legacy/azure/servicemanagement/websitemanagementservice.py",
+    "azure-servicemanagement-legacy/tests/test_legacy_mgmt_misc.py",
+    "azure-servicemanagement-legacy/tests/test_legacy_mgmt_sqldatabase.py",
+    "examples/AzureResourceViewer/AzureResourceViewer/views.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/Azure/azure-sdk-for-python/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz",
+    "call_sites": 20850,
+    "import_statements": 1096,
+    "call_targets_resolved": 1431,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 0,
+    "extends_clauses": 1039,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 1907,
+    "import_symbols_denormalized": 2560,
+    "extends_class_denormalized": 1039,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 1805
+}

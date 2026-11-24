@@ -1,0 +1,24 @@
+[2026-11-24T13:43:43Z] === ENRICH ITERATION 1 START | repo=Azure/azure-sdk-for-python sha=3dc2b386 ===
+[2026-11-24T13:43:43Z] [iter=1] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3dc2b386 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3dc2b386-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz
+[2026-11-24T13:43:52Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-24T13:44:32Z] [iter=1] AST store loaded triples=4211564 load_secs=39 mem_mb=1032 MB
+[2026-11-24T13:44:32Z] [iter=1] Step 2: Finding LSP targets mem_mb=1032 MB
+[2026-11-24T13:44:46Z] [iter=1] LSP targets found call_sites=20850 imports=1096 extends=1039 implements=0 secs=14
+[2026-11-24T13:44:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1032 MB
+[2026-11-24T13:45:29Z] [iter=1] Position index built positions=303336 nodes_with_types=386372 secs=31 mem_mb=1032 MB
+[2026-11-24T13:45:29Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1032 MB already_completed_types=[] already_completed_files=0
+[2026-11-24T13:45:29Z] [iter=1] Resolving target type target_type=call_site count=20850
+[2026-11-24T13:45:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=azure-mgmt-cdn/azure/mgmt/cdn/operations/profiles_operations.py
+[2026-11-24T13:46:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=1 resolved=47 errors=0 current=azure-servicemanagement-legacy/tests/test_legacy_mgmt_sqldatabase.py
+[2026-11-24T13:47:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=2 resolved=102 errors=0 current=azure-common/testutils/common_extendedtestcase.py
+[2026-11-24T13:48:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=4 resolved=203 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/websitemanagementservice.py
+[2026-11-24T13:49:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=5 resolved=244 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/_http/winhttp.py
+[2026-11-24T13:51:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=6 resolved=404 errors=0 current=azure-mgmt-cdn/azure/mgmt/cdn/operations/endpoints_operations.py
+[2026-11-24T13:51:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=7 resolved=470 errors=0 current=azure-servicebus/tests/test_servicebus_eventhub.py
+[2026-11-24T13:52:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=8 resolved=513 errors=0 current=azure-mgmt-network/azure/mgmt/network/operations/network_interfaces_operations.py
+[2026-11-24T14:05:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.4 files_done=10 resolved=1103 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/views.py
+[2026-11-24T14:06:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.4 files_done=11 resolved=1146 errors=0 current=azure-servicemanagement-legacy/azure/servicemanagement/servicemanagementservice.py
+[2026-11-24T14:13:48Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=11 new_files_this_iter=11 mem_mb=1039 MB
+[2026-11-24T14:13:48Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz triples=22893
+[2026-11-24T14:13:49Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-11-24T14:13:49Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=1806 elapsed_min=30.1 files_completed=11

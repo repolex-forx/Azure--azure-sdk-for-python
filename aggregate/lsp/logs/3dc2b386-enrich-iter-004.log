@@ -1,0 +1,30 @@
+[2026-11-24T15:56:13Z] === ENRICH ITERATION 4 START | repo=Azure/azure-sdk-for-python sha=3dc2b386 ===
+[2026-11-24T15:56:13Z] [iter=4] PHASE START: enrich repo=Azure/azure-sdk-for-python sha=3dc2b386 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3dc2b386-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz
+[2026-11-24T15:56:22Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-24T15:57:15Z] [iter=4] AST store loaded triples=4211564 load_secs=51 mem_mb=998 MB
+[2026-11-24T15:57:15Z] [iter=4] Step 2: Finding LSP targets mem_mb=998 MB
+[2026-11-24T15:57:26Z] [iter=4] LSP targets found call_sites=20850 imports=1096 extends=1039 implements=0 secs=11
+[2026-11-24T15:57:29Z] [iter=4] Loaded checkpoint partial graph triples=83874
+[2026-11-24T15:57:29Z] [iter=4] Primed enclosing-def cache from persisted triples entries=1052
+[2026-11-24T15:57:38Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=998 MB
+[2026-11-24T15:58:00Z] [iter=4] Position index built positions=303336 nodes_with_types=386372 secs=22 mem_mb=1182 MB
+[2026-11-24T15:58:00Z] [iter=4] Step 3: Starting LSP resolution mem_mb=1182 MB already_completed_types=[] already_completed_files=226
+[2026-11-24T15:58:00Z] [iter=4] Resolving target type target_type=call_site count=20850
+[2026-11-24T15:58:01Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=0 resolved=0 errors=0 current=azure-mgmt-web/azure/mgmt/web/operations/global_resource_groups_operations.py
+[2026-11-24T15:58:32Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=27 resolved=79 errors=0 current=azure-mgmt-resource/azure/mgmt/resource/resources/models/resource_management_error_with_details.py
+[2026-11-24T15:59:02Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=83 resolved=183 errors=0 current=azure-servicebus/tests/doctest_servicebusservicetopic.py
+[2026-11-24T15:59:33Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=135 resolved=267 errors=0 current=azure-servicebus/azure/servicebus/_common_error.py
+[2026-11-24T16:07:14Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=180 resolved=994 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/bootstrap.js
+[2026-11-24T16:10:15Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=181 resolved=1166 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate-vsdoc.js
+[2026-11-24T16:11:18Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=15.1 files_done=182 resolved=1238 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate.js
+[2026-11-24T16:12:35Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=183 resolved=1327 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/respond.js
+[2026-11-24T16:14:17Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=18.1 files_done=185 resolved=1548 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery.validate.unobtrusive.js
+[2026-11-24T16:15:00Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=186 resolved=1584 errors=0 current=examples/AzureResourceViewer/AzureResourceViewer/static/scripts/jquery-1.10.2.intellisense.js
+[2026-11-24T16:15:06Z] [iter=4] Target type resolved target_type=call_site resolved=1586 errors=0 secs=1027 mem_mb=1184 MB
+[2026-11-24T16:15:06Z] [iter=4] Resolving target type target_type=import_statement count=1096
+[2026-11-24T16:15:10Z] [iter=4] Target type resolved target_type=import_statement resolved=42 errors=0 secs=3 mem_mb=1184 MB
+[2026-11-24T16:15:10Z] [iter=4] Resolving target type target_type=extends_clause count=1039
+[2026-11-24T16:15:13Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=19.0 files_completed=726 new_files_this_iter=500 mem_mb=1184 MB
+[2026-11-24T16:15:13Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/3dc2b386293e2fea95abd206f57b52cbf9e8be5c.nq.gz triples=103233
+[2026-11-24T16:15:14Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-11-24T16:15:14Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=1140 elapsed_min=19.0 files_completed=726
